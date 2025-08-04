@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--icon link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>image gallery</title>
+</head>
+<body>
+    <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="active-button" data-filter="all">All</button>
+    <button data-filter="men">Men</button>
+    <button data-filter="women">Women</button>
+    <button data-filter="kids">Kids</button>
+    <button data-filter="shoes">Shoes</button>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="imageGallery">
+    <!-- MEN -->
+    <img src="images/image1.jpg" alt="men 1" data-category="men" data-index="0">
+    <img src="images/image2.jpg" alt="men 2" data-category="men" data-index="1">
+    <img src="images/image3.jpg" alt="men 3" data-category="men" data-index="2">
+    <img src="images/image4.jpg" alt="men 4" data-category="men" data-index="3">
+
+    <!-- WOMEN -->
+    <img src="images/image5.jpg" alt="women 1" data-category="women" data-index="4">
+    <img src="images/image6.jpg" alt="women 2" data-category="women" data-index="5">
+    <img src="images/image7.jpg" alt="women 3" data-category="women" data-index="6">
+    <img src="images/image8.jpg" alt="women 4" data-category="women" data-index="7">
+
+    <!-- KIDS -->
+    <img src="images/image9.jpg" alt="kid 1" data-category="kids" data-index="8">
+    <img src="images/image10.jpg" alt="kid 2" data-category="kids" data-index="9">
+    <img src="images/image11.jpg" alt="kid 3" data-category="kids" data-index="10">
+    <img src="images/image12.jpg" alt="kid 4" data-category="kids" data-index="11">
+
+    <!-- SHOES -->
+    <img src="images/image17.jpg" alt="shoe 1" data-category="shoes" data-index="12">
+    <img src="images/image18.jpg" alt="shoe 2" data-category="shoes" data-index="13">
+    <img src="images/image19.jpg" alt="shoe 3" data-category="shoes" data-index="14">
+    <img src="images/image20.jpg" alt="shoe 4" data-category="shoes" data-index="15">
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="close-btn" onclick="closeLightbox()">×</button>
+    <button class="nav prev" onclick="navigate(-1)">❮</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="nav next" onclick="navigate(1)">❯</button>
+  </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
